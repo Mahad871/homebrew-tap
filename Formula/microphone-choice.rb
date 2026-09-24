@@ -1,8 +1,8 @@
 class MicrophoneChoice < Formula
   desc "Choose your microphone when Bluetooth headphones connect"
   homepage "https://github.com/Mahad871/microphone-choice"
-  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "48224c6704999a6ebcf9398646a3966a1733c246b120ef5eaf846e9f6c72ec72"
+  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "64620220b4fed943c3c44515318350cef6dedb5af83fc39b08b2594bf2d89449"
   license "MIT"
 
   depends_on macos: :ventura
@@ -22,6 +22,8 @@ class MicrophoneChoice < Formula
   service do
     run [opt_prefix/"Microphone Choice.app/Contents/MacOS/MicChoice", "--no-login-item"]
     keep_alive true
+    process_type :interactive
+    error_log_path var/"log/microphone-choice.log"
   end
 
   test do
