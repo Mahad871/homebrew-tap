@@ -1,8 +1,8 @@
 class MicrophoneChoice < Formula
   desc "Choose your microphone when a Bluetooth device connects"
   homepage "https://github.com/Mahad871/microphone-choice"
-  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.0.5.tar.gz"
-  sha256 "00bf8e7ab6f4823243b50b62ab23988745f63a9c745bb7d6a8d43c2f1a28d644"
+  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.0.6.tar.gz"
+  sha256 "e8685311c6344784c2e7d9a13d27b557e8f2492ae6878c8d5ede2680aa1b0c1d"
   license "MIT"
 
   depends_on macos: :ventura
