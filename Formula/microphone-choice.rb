@@ -1,8 +1,8 @@
 class MicrophoneChoice < Formula
-  desc "Choose your microphone when a Bluetooth device connects"
+  desc "Choose Bluetooth microphones and fill windows beside Stage Manager"
   homepage "https://github.com/Mahad871/microphone-choice"
-  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "ce042986c67e81b59389cecb5d108145d5f4bc2f35bcc2bf62e712f3a1966d22"
+  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "f6e9f2a60cb831bc4df6e4aedc1639b3aa7e5feaa75842745aaedd6136988ef3"
   license "MIT"
 
   depends_on macos: :ventura
@@ -16,6 +16,9 @@ class MicrophoneChoice < Formula
     <<~EOS
       Start Microphone Choice now and at login:
         brew services start microphone-choice
+
+      Stage Manager Fill needs Accessibility access to resize other apps'
+      windows. Open its settings to check access and open the macOS privacy pane.
     EOS
   end
 
