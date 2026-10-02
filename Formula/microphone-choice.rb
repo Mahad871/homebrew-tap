@@ -1,8 +1,8 @@
 class MicrophoneChoice < Formula
   desc "Choose Bluetooth microphones and fill windows beside Stage Manager"
   homepage "https://github.com/Mahad871/microphone-choice"
-  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "f6e9f2a60cb831bc4df6e4aedc1639b3aa7e5feaa75842745aaedd6136988ef3"
+  url "https://github.com/Mahad871/microphone-choice/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "6dc8509506ac0b51fb5a558cc09b572c1f88cb276c96ff9ca562cb38a7034074"
   license "MIT"
 
   depends_on macos: :ventura
