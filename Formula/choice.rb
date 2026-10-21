@@ -1,8 +1,8 @@
 class Choice < Formula
   desc "Choose Bluetooth microphones and fill windows beside Stage Manager"
   homepage "https://github.com/Mahad871/choice"
-  url "https://github.com/Mahad871/choice/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "08d3bf19dcad251ff4cd2e76883917f00e319002d0c0fbb4332ebc0435737c0c"
+  url "https://github.com/Mahad871/choice/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "d2a7a5eab02eb7ccd6dc263713217c23ddded16db6d70fe521adbd989671a420"
   license "MIT"
 
   depends_on macos: :ventura
@@ -21,7 +21,10 @@ class Choice < Formula
         brew services stop microphone-choice
 
       Stage Manager Fill needs Accessibility access to resize other apps'
-      windows. Open its settings to check access and open the macOS privacy pane.
+      windows. In its settings, click Open Accessibility Settings and switch
+      Choice on. If Choice is already on but access is missing (upgrades from
+      versions before 2.0.1), click Repair Access instead. Later upgrades keep
+      the permission.
     EOS
   end
 
